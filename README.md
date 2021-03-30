@@ -1,5 +1,5 @@
 # docker-demo-app
-=====================================================================
+
 
 This demo app shows a simple user profile app set up using
 
@@ -9,7 +9,7 @@ This demo app shows a simple user profile app set up using
 
 All components are based on docker
 
-###To start the application with docker: ###
+### __To start the application with docker:__ ###
 
 Step 1: Create docker network
 
@@ -40,11 +40,12 @@ Step 7: Access you nodejs application UI from browser
 
 > http://localhost:3000
 
-###To start the application with Docker Compose:###
+### __To start the application with Docker Compose:__ ###
 
 Step 1: start mongodb and mongo-express
 
 > docker-compose -f docker-compose.yaml up
+
 You can access the mongo-express under localhost:8080 from your browser
 
 Step 2: in mongo-express UI - create a new database "my-db"
@@ -59,6 +60,9 @@ Step 4: start node server
 Step 5: access the nodejs application from browser
 
 > http://localhost:3000
+
 To build a docker image from the application
+
 > docker build -t my-app:1.0 .       
+
 The dot "." at the end of the command denotes current location of the Dockerfile.
