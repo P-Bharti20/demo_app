@@ -4,8 +4,8 @@
 This demo app shows a simple user profile app set up using
 
 * index.html with pure js and css styles
-* nodejs backend with express module
-* mongodb for data storage
+* nodejs backend with pgAdmin module
+* postgreSQL for data storage
 
 All components are based on docker
 
@@ -13,11 +13,11 @@ All components are based on docker
 
 Step 1: Create docker network
 
-> docker network create mongo-network
+> docker network create postgrs-network
  
-Step 2: start mongodb
+Step 2: start postgres
 
-> docker run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongodb --net mongo-network mongo    
+> docker run -d -p 5432:5432 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongodb --net mongo-network mongo    
 
 Step 3: start mongo-express
 
